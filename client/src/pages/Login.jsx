@@ -2,6 +2,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+axios.defaults.withCredentials = true;
+
 export default function Login() {
   const [inputs, setInputs] = useState({
     username: '',
