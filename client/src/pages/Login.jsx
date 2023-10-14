@@ -1,9 +1,6 @@
-import axios from 'axios';
 import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/authContext';
-
-axios.defaults.withCredentials = true;
 
 export default function Login() {
   const [inputs, setInputs] = useState({
